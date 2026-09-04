@@ -30,8 +30,7 @@ box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    padding-left: 40px;
-    
+    padding-left: 40px;   
 }
 .square {
     height: 40px;
@@ -53,6 +52,7 @@ box-sizing: border-box;
 .input {
     background-color: transparent;
     border-color: transparent;
+    width: 95%;
 }
 .card {
     padding: 20px;

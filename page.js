@@ -1,6 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
- const selectedCountryName = urlParams.get("country");
- const countryDetailsContainer = document.querySelector(".container");
+ const selectedCountryName = urlParams.get("country") || "Belgium";
+ const countryDetailsContainer = document.getElementById("country-details");
 
  async function loadCountryDetails() {
    if (!countryDetailsContainer) return;
@@ -86,6 +86,8 @@ const urlParams = new URLSearchParams(window.location.search);
            <p><strong>Region:</strong> ${region}</p>
            <p><strong>Sub Region:</strong> ${subregion}</p>
            <p><strong>Capital:</strong> ${capital}</p>
+         </div>
+         <div class="col3">
            <p><strong>Top Level Domain:</strong> ${topLevelDomain}</p>
            <p><strong>Currencies:</strong> ${currencies}</p>
            <p><strong>Languages:</strong> ${languages}</p>
